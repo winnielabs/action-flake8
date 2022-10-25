@@ -42,6 +42,9 @@ inputs:
 runs:
   using: "composite"
   steps:
+    - uses: winnielabs/action-setup@master
+      with:
+        reviewdog_version: latest
     - run: $GITHUB_ACTION_PATH/entrypoint.sh
       shell: bash
       env:
