@@ -33,7 +33,7 @@ jobs:
         with:
           python-version: "3.8"
       - name: flake8 Lint
-        uses: reviewdog/action-flake8@v3
+        uses: reviewdog/action-flake8@b65981e158319f08cb7d0132f28bc0081e110adc # v3.15.2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 ```
